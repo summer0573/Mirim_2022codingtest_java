@@ -1,6 +1,7 @@
 package codingtest1;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 class Main {
     public static void main(String[] args){
@@ -10,7 +11,12 @@ class Main {
                 new Coffee("딸기라떼", 3500),
                 new Coffee("초코라떼", 4000)
                 };
-        Arrays.sort(coffees); //오름차순
+        Arrays.sort(coffees, new Comparator<Coffee>() {
+            @Override
+            public int compare(Coffee c1, Coffee c2) {
+                return Integer.compare(c1.getPriceAsInteger(), c2.getPriceAsInteger());
+            }
+        });
         for(Coffee coffee : coffees) {
             System.out.println(coffee.toString());
         }
