@@ -1,4 +1,4 @@
-package codingtest1;
+package codingtest2;
 
 public class Student {
     private String name;
