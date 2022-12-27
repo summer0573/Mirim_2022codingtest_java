@@ -32,9 +32,9 @@ public class StudentExample {
         intStream.forEach(a->System.out.println(a*2+","));
 
         //숫자로 스트림
-        public static int sum;
-        IntStream stream1 = IntStream.rangeClosed(1, 100);
-        stream1.forEach(a->sum+=a);
-        System.out.println("총합 : "+sum);
+//        public static int sum;
+//        IntStream stream1 = IntStream.rangeClosed(1, 100);
+//        stream1.forEach(a->sum+=a);
+//        System.out.println("총합 : "+sum);
     }
 }
