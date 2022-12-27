@@ -15,5 +15,6 @@ public class StudentExample {
                 .getAsDouble();
 
         System.out.println("평균 : " + avg) ;
+        //dhdld?
     }
 }
