@@ -45,7 +45,8 @@ class Solution4 {
         for (String s : strNums) {
             answer += s;
         }
-        if (answer.charAt('0')=='0') return "0";
+
+        if (answer.charAt(0)=='0') return "0";
 
 
         //출력
