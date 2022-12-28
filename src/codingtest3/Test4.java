@@ -1,6 +1,7 @@
 package codingtest3;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 //가장 큰 수
 class Solution4 {
@@ -14,18 +15,24 @@ class Solution4 {
         }
 
         //1)버블 정렬
-        for (int i = 0; i < strNums.length - 1; i++) {
-            for (int j = i + 1; j < strNums.length; j++) {
-                String s1 = strNums[i];
-                String s2 = strNums[j];
-                if ((s1 + s2).compareTo(s2 + s1) < 0) {
-                    strNums[i] = strNums[j];
-                    strNums[j] = s1;
-                }
-            }
-        }
+//        for (int i = 0; i < strNums.length - 1; i++) {
+//            for (int j = i + 1; j < strNums.length; j++) {
+//                String s1 = strNums[i];
+//                String s2 = strNums[j];
+//                if ((s1 + s2).compareTo(s2 + s1) < 0) {
+//                    strNums[i] = strNums[j];
+//                    strNums[j] = s1;
+//                }
+//            }
+//        }
 
         //2)sort
+        Arrays.sort(strNums, new Comparator<String>() {
+            @Override
+            public int compare(String s1, String s2) {
+                return (s2+s1).compareTo(s1+s2);
+            }
+        });
 
         //3)람다식
 
