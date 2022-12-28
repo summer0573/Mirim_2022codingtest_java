@@ -2,8 +2,8 @@ package codingtest3;
 
 import java.util.Arrays;
 //구명보트
-class Solution{
-    public int solution(int[] people, int limit){
+class Solution1{
+    public int solution1(int[] people, int limit){
         //people : 몸무게 목록
         //limit : 보트 제한 중량
         int answer = 0; //보트의 이동 횟수
