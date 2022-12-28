@@ -2,7 +2,7 @@ package codingtest3;
 
 import java.util.Arrays;
 //구명보트
-class Solution1{
+class Solution{
     public int solution(int[] people, int limit){
         //people : 몸무게 목록
         //limit : 보트 제한 중량
