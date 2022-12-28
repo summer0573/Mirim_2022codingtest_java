@@ -13,7 +13,7 @@ public class LoopExample {
         intStream.filter(a->a%2==0).peek(n->System.out.println(n)).sum();
         System.out.println("============================");
         IntStream intStream1 = Arrays.stream(intArray);
-        intStream.filter(a->a%2==1).forEach(n->System.out.println(n));
+        intStream1.filter(a->a%2==1).forEach(n->System.out.println(n));
 
         //매칭
         int[] intArray1 = {2,4,6};
@@ -37,8 +37,6 @@ public class LoopExample {
                 .mapToInt(Integer :: intValue)
                 .average()
                 .ifPresent(a->System.out.println("평균 : "+a));
-
-
 
     }
 }
