@@ -27,14 +27,15 @@ class Solution4 {
 //        }
 
         //2)sort
-        Arrays.sort(strNums, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                return (s2+s1).compareTo(s1+s2);
-            }
-        });
+//        Arrays.sort(strNums, new Comparator<String>() {
+//            @Override
+//            public int compare(String s1, String s2) {
+//                return (s2+s1).compareTo(s1+s2);
+//            }
+//        });
 
         //3)람다식
+        Arrays.sort(strNums, (s1, s2) -> (s2 + s1).compareTo(s1 + s2));
 
         //numbers : 숫자 > 문자로 변환 > 내림차순 정렬
         //문자열 다루는 배열의 주어진 numbers을 문자로 저장
@@ -53,7 +54,7 @@ class Solution4 {
             answer += s;
         }
 
-        if (answer.charAt(0)=='0') return "0";
+        if (answer.charAt(0) == '0') return "0";
 
 
         //출력
