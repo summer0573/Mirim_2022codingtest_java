@@ -20,11 +20,16 @@ class Solution2 {
             if(index<stations.length && stations[index]-w <= position){
                 position = stations[index] + w + 1;
                 index++;
+                //index = 0; station[0] - w <= position // 4-3
+                //index = 1; station[1] - w <= position(4)
+                //position = station[1] - w <= position
             }
             //2)새롭게 설치하는 경우
             else {
                 answer++;
                 position += 2*w+1;
+                //position 변경 > 기지국의 위치 2*1+1 > 4
+                //position 변경 > 6번일때
             }
         }
         return answer;
