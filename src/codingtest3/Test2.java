@@ -3,7 +3,7 @@ package codingtest3;
 
 //기지국 설치
 class Solution2 {
-    public int solution2(int n, int[] stations, int w) {
+    public int solution(int n, int[] stations, int w) {
         int answer = 0;
         //n : 아파트 동 갯수
         //stations : 기지국이 설치된 위치
