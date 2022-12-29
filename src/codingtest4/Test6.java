@@ -33,4 +33,3 @@ public class Test6 {
         return answer;
     }
 }
-}
