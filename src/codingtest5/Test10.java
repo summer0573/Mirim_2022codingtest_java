@@ -7,7 +7,7 @@ public class Test10 {
         //1)별도의 저장 공간을 따로 만들어서 사용 DP테이블
         //계산할 공간을 저장할 배열 생성
         int max = 0;
-        int dp[][] = new int[][];
+        int dp[][] = new int[5][5];
         dp[0][0] = triangle[0][0];//첫번째값
 
         //2)dp테이블의 초기값으로 왼쪽과 오른쪽을 더해서 설정
